@@ -1,0 +1,132 @@
+
+
+:root{
+    --Light-red: hsl(0, 100%, 67%);
+    --Orange-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    --Light-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+
+    --Violet-blue: hsla(256, 72%, 46%, 1);  
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Pale-blue);
+}
+
+.result{
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(to bottom, var(--Light-blue),var(--Light-royal-blue))
+}
+
+
+.circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, var(--Violet-blue),var(--Persian-blue))
+}
+
+
+@media (min-width:768px){
+    
+.result{
+    max-width: 260px;
+}
+
+}
+
+@media (min-width:375px) and (max-width:767px){
+    
+.result{
+    border-radius: 0  0 50px 50px;
+}
+
+.btn{
+    max-width: 75%;
+}
+
+.badge{
+    width: 75% !important;
+}
+
+}
+
+.badge{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 200px;
+    padding: 10px;
+}
+
+h6{
+    margin: 0%;
+}
+
+#redBackground{
+    background-color: hsla(0, 100%, 67%,0.2);
+    color: hsla(0, 100%, 67%,90%);
+}
+
+#yellowBackground{
+    background-color: hsla(39, 100%, 56%,0.2);
+    color: var(--Orange-yellow);
+}
+
+#blueBackground{
+    background-color: hsla(234, 85%, 45%,0.2);
+    color: var(--Cobalt-blue);
+}
+
+#greenBackground{
+    background-color: hsla(166, 100%, 37%,0.2);
+    color: var(--Green-teal);
+}
+
+img{
+    width: 20px;
+}
+
+.darkText{
+    color: var(--Dark-gray-blue);
+    font-size: 15px;
+}
+
+.greyText{
+    color: grey;
+    font-size: 15px;
+}
+
+.btn{
+    border-radius: 1rem;
+    width: 100%;
+    background-color: var(--Dark-gray-blue);
+    transition-duration: 0.4s;
+}
+
+.btn:hover{
+    background: linear-gradient(to bottom, var(--Light-blue),var(--Light-royal-blue))
+}
